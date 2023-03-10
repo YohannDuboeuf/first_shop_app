@@ -4,6 +4,8 @@ import '../widgets/product_item.dart';
 import '../models/product.dart';
 
 class ProductOverviewScreen extends StatelessWidget {
+  static const routeName = '/product-overview';
+
   final List<Product> products = [
     Product(
       id: 'p1',
@@ -43,6 +45,7 @@ class ProductOverviewScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("MyShop"),
+        backgroundColor: Colors.deepPurpleAccent,
       ),
       body: GridView.builder(
         padding: const EdgeInsets.all(10.0),
